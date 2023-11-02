@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import videoBackground from "../../../../public/illustration site internet/vidéos/3d-motion-graphic-background-glowing-lines-abstrac-2022-01-31-03-02-39-utc.mp4";
-
+import NavBar from "../../reusable-ui/NavBar";
 export default function HomePage() {
   return (
     <HomePageStyled>
       <div className="background">
         <video autoPlay loop muted src={videoBackground} />
-        {/* <NavBar /> */}
+        <NavBar />
       </div>
     </HomePageStyled>
   );
