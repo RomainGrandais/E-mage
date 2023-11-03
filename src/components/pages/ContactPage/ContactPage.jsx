@@ -27,6 +27,10 @@ export default function ContactPage() {
           </p>
         </div>
       </div>
+      <div className="contact">
+        <div className="infos"></div>
+        <div className="form"></div>
+      </div>
     </ContactPageStyled>
   );
 }
@@ -34,6 +38,7 @@ export default function ContactPage() {
 const ContactPageStyled = styled.div`
   height: 100vh;
   background-color: #282828;
+
   .bio {
     height: 25%;
     display: flex;
@@ -48,8 +53,7 @@ const ContactPageStyled = styled.div`
     .description {
       width: 50%;
       height: 100%;
-      border-radius: 20px;
-      background-color: #282828;
+      border-radius: 46px;
       box-shadow: inset 0px 2px 3px #ffffff73, 14px 12px 10px #0000006b;
       display: flex;
       align-items: center;
@@ -60,6 +64,29 @@ const ContactPageStyled = styled.div`
         font-family: "Century Gothic";
         font-size: 12px;
       }
+    }
+  }
+
+  .contact {
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 50px;
+
+    .infos {
+      width: 21%;
+      height: 100%;
+      box-shadow: inset 0px 2px 3px #ffffff73, 14px 12px 10px #0000006b;
+      border-radius: 46px;
+    }
+    .form {
+      width: 50%;
+      height: 100%;
+      box-shadow: 14px 12px 10px #0000006b;
+      border-radius: 46px;
     }
   }
 `;
