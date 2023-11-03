@@ -4,11 +4,11 @@ import styled from "styled-components";
 export default function NavBar() {
   return (
     <NavBarStyled>
-      <div className="link">
-        <div>HOME</div>
-        <div>PORTEFOLIO</div>
-        <div>CONTACT</div>
-        <div>SHOP</div>
+      <div className="bar">
+        <div className="link">HOME</div>
+        <div className="link">PORTEFOLIO</div>
+        <div className="link">CONTACT</div>
+        <div className="link">SHOP</div>
       </div>
     </NavBarStyled>
   );
@@ -24,9 +24,12 @@ const NavBarStyled = styled.div`
   color: white;
   font-family: "Bebas Neue";
   font-size: 30px;
-  .link {
+  .bar {
     display: flex;
     justify-content: space-around;
     width: 60%;
+  }
+  .link {
+    cursor: pointer;
   }
 `;
