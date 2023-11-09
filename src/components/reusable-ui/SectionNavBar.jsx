@@ -2,29 +2,29 @@ import React from "react";
 import styled from "styled-components";
 import { AiOutlineCaretLeft } from "react-icons/ai";
 
-export default function ContactNavBar() {
+export default function SectionNavBar({ label }) {
   return (
-    <ContactNavBarStyled>
-      <div className="container">
+    <SectionNavBarStyled>
+      <div className="nav-container">
         <div className="link">
           <AiOutlineCaretLeft />
           Home
         </div>
         <div className="span">
-          <span>CONTACT</span>
+          <span>{label}</span>
         </div>
       </div>
-    </ContactNavBarStyled>
+    </SectionNavBarStyled>
   );
 }
 
-const ContactNavBarStyled = styled.div`
+const SectionNavBarStyled = styled.div`
   width: 100%;
   height: 70px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
   font-size: 30px;
   color: white;
-  .container {
+  .nav-container {
     display: flex;
     flex-direction: row;
     align-items: center;
