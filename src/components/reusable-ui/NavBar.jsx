@@ -1,13 +1,26 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import PortefolioPage from "../pages/PortefolioPage/PortefolioPage";
 
 export default function NavBar() {
+  const navigate = useNavigate();
+
+  const handleClick = (path) => {
+    navigate(path);
+  };
   return (
     <NavBarStyled>
       <div className="bar">
-        <div className="link">HOME</div>
-        <div className="link">PORTEFOLIO</div>
-        <div className="link">CONTACT</div>
+        <div className="link" onClick={() => handleClick("/")}>
+          HOME
+        </div>
+        <div className="link" onClick={() => handleClick("portefolio")}>
+          PORTEFOLIO
+        </div>
+        <div className="link" onClick={() => handleClick("contact")}>
+          CONTACT
+        </div>
         <div className="link">SHOP</div>
       </div>
     </NavBarStyled>
