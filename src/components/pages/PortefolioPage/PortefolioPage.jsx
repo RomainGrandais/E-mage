@@ -2,8 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import SectionNavBar from "../../reusable-ui/SectionNavBar";
 import PortefolioProject from "./PortefolioProject";
+import { useNavigate } from "react-router-dom";
 
 export default function PortefolioPage() {
+  const navigate = useNavigate();
+
+  const handleClick = (path) => {
+    navigate(path);
+  };
   return (
     <PortefolioPageStyled>
       <SectionNavBar />
@@ -13,7 +19,10 @@ export default function PortefolioPage() {
           <PortefolioProject label={"GAME DESIGN"} />
           <PortefolioProject label={"UX / UI DESIGN"} />
           <PortefolioProject label={"PRINT"} />
-          <PortefolioProject label={"CONCEPT ART"} />
+          <PortefolioProject
+            label={"CONCEPT ART"}
+            onClick={() => handleClick("/portefolio/conceptArt")}
+          />
           <PortefolioProject label={"GALLERY"} />
         </div>
       </div>

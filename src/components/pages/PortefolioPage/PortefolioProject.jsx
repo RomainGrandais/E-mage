@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function PortefolioProject({ label }) {
+export default function PortefolioProject({ label, onClick }) {
   return (
-    <PortefolioProjectStyled>
+    <PortefolioProjectStyled onClick={onClick}>
       <span>{label}</span>
     </PortefolioProjectStyled>
   );
@@ -18,6 +18,7 @@ const PortefolioProjectStyled = styled.div`
   display: flex;
   align-items: center;
   font-size: 30px;
+  cursor: pointer;
   span {
     padding-left: 20px;
   }

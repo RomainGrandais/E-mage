@@ -1,12 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import { AiOutlineCaretLeft } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 export default function SectionNavBar({ label }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  };
   return (
     <SectionNavBarStyled>
       <div className="nav-container">
-        <div className="link">
+        <div className="link" onClick={handleClick}>
           <AiOutlineCaretLeft />
           Home
         </div>
@@ -20,7 +26,7 @@ export default function SectionNavBar({ label }) {
 
 const SectionNavBarStyled = styled.div`
   width: 100%;
-  height: 70px;
+  height: 50px;
   background-color: transparent;
   font-size: 30px;
   color: white;
@@ -35,6 +41,8 @@ const SectionNavBarStyled = styled.div`
       display: flex;
       align-items: center;
       padding-left: 10px;
+      cursor: pointer;
+      z-index: 1;
     }
     .span {
       display: flex;
