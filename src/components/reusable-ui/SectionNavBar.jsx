@@ -26,7 +26,7 @@ export default function SectionNavBar({ label }) {
 
 const SectionNavBarStyled = styled.div`
   width: 100%;
-  height: 70px;
+  height: 50px;
   background-color: transparent;
   font-size: 30px;
   color: white;

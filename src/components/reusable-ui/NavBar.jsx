@@ -9,6 +9,7 @@ export default function NavBar() {
   const handleClick = (path) => {
     navigate(path);
   };
+
   return (
     <NavBarStyled>
       <div className="bar">
@@ -22,6 +23,9 @@ export default function NavBar() {
           CONTACT
         </div>
         <div className="link">SHOP</div>
+        <div className="link" onClick={() => handleClick("services")}>
+          SERVICES
+        </div>
       </div>
     </NavBarStyled>
   );
@@ -40,7 +44,7 @@ const NavBarStyled = styled.div`
   .bar {
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    width: 70%;
   }
   .link {
     cursor: pointer;
