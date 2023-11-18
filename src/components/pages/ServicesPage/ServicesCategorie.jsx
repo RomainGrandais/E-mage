@@ -3,10 +3,20 @@ import styled from "styled-components";
 import { IoBusinessOutline } from "react-icons/io5";
 import { FaRegHandshake } from "react-icons/fa";
 import influenceur from "../../../../public/illustration site internet/services/influenceurs mes copuilles.png";
+import { useNavigate } from "react-router-dom";
+
 export default function ServicesCategorie() {
+  const navigate = useNavigate();
+
+  const handleClick = (path) => {
+    navigate(path);
+  };
   return (
     <ServicesCategorieStyled>
-      <div className="entreprise">
+      <div
+        className="entreprise"
+        onClick={() => handleClick("/services/entreprise")}
+      >
         <p>UNE ENTREPRISE</p>
         <div className="icon-business">
           <IoBusinessOutline />
@@ -41,6 +51,7 @@ const ServicesCategorieStyled = styled.div`
   width: 100%;
 
   .entreprise {
+    cursor: pointer;
     width: 15%;
     height: 31vh;
     background: transparent
@@ -63,6 +74,7 @@ const ServicesCategorieStyled = styled.div`
   }
 
   .influenceur {
+    cursor: pointer;
     width: 15%;
     height: 31vh;
     background: transparent
@@ -92,6 +104,7 @@ const ServicesCategorieStyled = styled.div`
     }
   }
   .particulier {
+    cursor: pointer;
     width: 15%;
     height: 31vh;
 
