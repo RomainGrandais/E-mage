@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SectionNavBar from "../../reusable-ui/SectionNavBar";
 import ServicesCategorie from "./ServicesCategorie";
+import ServicesFooter from "./ServicesFooter";
 
 export default function ServicesPage() {
   return (
@@ -12,12 +13,7 @@ export default function ServicesPage() {
           <h1>SERVICES</h1>
           <h2>VOUS ÊTES :</h2>
           <ServicesCategorie />
-          <div className="footer">
-            <p>
-              Pour toute demande spécifique, pour une demande de devis, pour me
-              parler d'un projet, contactez moi.
-            </p>
-          </div>
+          <ServicesFooter />
         </div>
       </div>
     </ServicesPageStyled>
@@ -31,7 +27,7 @@ const ServicesPageStyled = styled.div`
 
   &::before {
     content: "";
-    height: 400vh;
+    height: 100vh;
 
     position: absolute;
     top: 0;
@@ -39,7 +35,7 @@ const ServicesPageStyled = styled.div`
     right: 0;
     bottom: 0;
     background-image: url("../../../../public/illustration site internet/services/fond un peu random.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
   }
@@ -59,17 +55,6 @@ const ServicesPageStyled = styled.div`
       letter-spacing: 0px;
       color: #ffffff;
       padding-bottom: 30px;
-    }
-    .footer {
-      position: absolute;
-      bottom: 5%;
-      border-top: 1px solid #e0d1a1;
-      border-bottom: 1px solid #e0d1a1;
-      padding: 5px;
-      p {
-        font: normal normal normal 15px Century Gothic;
-        letter-spacing: 0px;
-      }
     }
   }
 `;
