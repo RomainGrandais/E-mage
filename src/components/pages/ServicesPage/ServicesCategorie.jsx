@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { IoBusinessOutline } from "react-icons/io5";
 import { FaRegHandshake } from "react-icons/fa";
-
+import influenceur from "../../../../public/illustration site internet/services/influenceurs mes copuilles.png";
 export default function ServicesCategorie() {
   return (
     <ServicesCategorieStyled>
@@ -20,6 +20,7 @@ export default function ServicesCategorie() {
           <br />
           STREAMER
         </p>
+        <img src={influenceur} alt="" />
       </div>
       <div className="particulier">
         <p>UN PARTICULIER</p>
@@ -83,7 +84,11 @@ const ServicesCategorieStyled = styled.div`
     p {
       text-align: center;
       letter-spacing: 0px;
-      font-size: 25px;
+      font-size: 23px;
+    }
+    img {
+      width: 53%;
+      height: 48%;
     }
   }
   .particulier {

@@ -27,8 +27,22 @@ export default function ServicesPage() {
 const ServicesPageStyled = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: #3d3d3d;
   color: white;
+
+  &::before {
+    content: "";
+    height: 400vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../../../public/illustration site internet/services/fond un peu random.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
   .content {
     display: flex;
     align-items: center;
