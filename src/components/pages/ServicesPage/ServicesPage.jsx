@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SectionNavBar from "../../reusable-ui/SectionNavBar";
 import ServicesCategorie from "./ServicesCategorie";
-import ServicesFooter from "./ServicesFooter";
+import ServicesFooter from "../../reusable-ui/ServicesFooter";
 
 export default function ServicesPage() {
   return (

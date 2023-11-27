@@ -4,7 +4,7 @@ import ContactPage from "./components/pages/ContactPage/ContactPage";
 import PortefolioPage from "./components/pages/PortefolioPage/PortefolioPage";
 import ConceptArtPage from "./components/pages/PortefolioPage/ConceptArt/ConceptArtPage";
 import ServicesPage from "./components/pages/ServicesPage/ServicesPage";
-import ServicesEntreprisePage from "./components/pages/ServicesPage/Categorie/EntreprisePage";
+import ServicesEntreprisePage from "./components/pages/ServicesPage/Categorie/Entreprise/EntreprisePage";
 
 function App() {
   return (
