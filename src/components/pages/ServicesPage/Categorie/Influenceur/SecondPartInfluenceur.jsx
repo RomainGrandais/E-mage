@@ -35,7 +35,7 @@ export default function SecondPartInfluenceur() {
         top={"85%"}
         left={"75%"}
       />
-      <ChooseButton right={false} top={"30%"} left={"-25%"} />
+      {/* <ChooseButton right={false} top={"30%"} left={"-25%"} /> */}
     </SecondPartInfluenceurStyled>
   );
 }
@@ -52,7 +52,7 @@ const SecondPartInfluenceurStyled = styled.div`
     height: 100%;
     transform: perspective(600px) rotateY(-10deg);
     position: absolute;
-    background: transparent linear-gradient(53deg, #82d3dc 0%, #b9eef3 100%) 0%
+    background: transparent linear-gradient(52deg, #8e82dc 0%, #b9eef3 100%) 0%
       0% no-repeat padding-box;
     box-shadow: inset 0px 10px 6px #58585829, 0px 10px 6px #00000029;
     border-radius: 10px;

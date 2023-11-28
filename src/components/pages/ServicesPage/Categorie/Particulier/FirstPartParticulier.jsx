@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { IoBusinessOutline } from "react-icons/io5";
+import { FaRegHandshake } from "react-icons/fa";
 import TransparentSquare from "../../../../reusable-ui/TransparentSquare";
 import ChooseButton from "../../../../reusable-ui/ChooseButton";
 
-export default function FirstPartInfluenceur() {
+export default function FirstPartParticulier() {
   return (
-    <FirstPartInfluenceurStyled>
+    <FirstPartParticulierStyled>
       <div className="title">
         <p>ENTREPRISE</p>
         <div className="icon">
-          <IoBusinessOutline />
+          <FaRegHandshake />
         </div>
       </div>
       <div className="main">
@@ -29,19 +29,19 @@ export default function FirstPartInfluenceur() {
           <br /> <span>Prix mensuel : 249€ TTC</span>
         </p>
       </div>
-      <ChooseButton right={true} top={"-80%"} left={"83%"} />
+      {/* <ChooseButton right={true} top={"-80%"} left={"83%"} /> */}
       <TransparentSquare
         width={"10%"}
         height={"12%"}
-        top={"43%"}
+        top={"22%"}
         left={"27%"}
       />
       <TransparentSquare width={"10%"} height={"12%"} top={"52%"} left={"5%"} />
-    </FirstPartInfluenceurStyled>
+    </FirstPartParticulierStyled>
   );
 }
 
-const FirstPartInfluenceurStyled = styled.div`
+const FirstPartParticulierStyled = styled.div`
   width: 33%;
   height: 40vh;
   .title {
@@ -49,7 +49,9 @@ const FirstPartInfluenceurStyled = styled.div`
     width: 50%;
     height: 35%;
     transform: perspective(150px) rotateY(10deg);
-    background: linear-gradient(63deg, #0f0f6b 0%, #28bec3 87%, #28c0c5 100%);
+    background: transparent
+      linear-gradient(63deg, #8227a1 0%, #b98c54 62%, #baa43c 100%) 0% 0%
+      no-repeat padding-box;
     box-shadow: inset 0px 10px 6px #58585829, 0px 10px 6px #00000029;
     border-radius: 10px;
     display: flex;
@@ -76,7 +78,7 @@ const FirstPartInfluenceurStyled = styled.div`
   }
   .main {
     position: relative;
-    background: transparent linear-gradient(56deg, #c3f0f5 0%, #ffffff 100%) 0%
+    background: transparent linear-gradient(55deg, #f5ebc3 0%, #ffffff 100%) 0%
       0% no-repeat padding-box;
     box-shadow: inset 0px 10px 6px #58585829, 0px 10px 6px #00000029;
     border-radius: 10px;

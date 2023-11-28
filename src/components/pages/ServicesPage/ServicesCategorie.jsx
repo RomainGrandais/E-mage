@@ -22,7 +22,10 @@ export default function ServicesCategorie() {
           <IoBusinessOutline />
         </div>
       </div>
-      <div className="influenceur">
+      <div
+        className="influenceur"
+        onClick={() => handleClick("/services/influenceur")}
+      >
         <p>
           INFLUENCEUR
           <br />
@@ -32,7 +35,10 @@ export default function ServicesCategorie() {
         </p>
         <img src={influenceur} alt="" />
       </div>
-      <div className="particulier">
+      <div
+        className="particulier"
+        onClick={() => handleClick("/services/particulier")}
+      >
         <p>UN PARTICULIER</p>
         <div className="icon-business">
           <FaRegHandshake />

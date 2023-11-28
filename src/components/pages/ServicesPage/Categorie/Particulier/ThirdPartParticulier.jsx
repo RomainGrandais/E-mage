@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import TransparentSquare from "../../../../reusable-ui/TransparentSquare";
 
-export default function ThirdPart() {
+export default function ThirdPartParticulier() {
   return (
-    <ThirdPartStyled>
+    <ThirdPartParticulierStyled>
       <div className="main">
         <h1>PREMIUM</h1>
 
@@ -31,11 +31,11 @@ export default function ThirdPart() {
         top={"55%"}
         left={"80%"}
       />
-    </ThirdPartStyled>
+    </ThirdPartParticulierStyled>
   );
 }
 
-const ThirdPartStyled = styled.div`
+const ThirdPartParticulierStyled = styled.div`
   width: 32%;
   height: 31vh;
   position: absolute;
@@ -45,9 +45,8 @@ const ThirdPartStyled = styled.div`
     position: relative;
     width: 100%;
     height: 100%;
-    background: transparent
-      linear-gradient(66deg, #0f0f6b 0%, #28bec3 87%, #28c0c5 100%) 0% 0%
-      no-repeat padding-box;
+    background: transparent linear-gradient(66deg, #87309a 0%, #ffee00 100%) 0%
+      0% no-repeat padding-box;
     box-shadow: inset 0px 10px 6px #58585829, 0px 10px 6px #00000029;
     border-radius: 10px;
     display: flex;

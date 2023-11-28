@@ -1,26 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 import SectionNavBar from "../../../../reusable-ui/SectionNavBar";
-import FirstPart from "./FirstPart";
-import SecondPart from "./SecondPart";
-import ThirdPart from "./ThirdPart";
 import ServicesFooter from "../../../../reusable-ui/ServicesFooter";
+import FirstPartParticulier from "./FirstPartParticulier";
+import SecondPartParticulier from "./SecondPartParticulier";
+import ThirdPartParticulier from "./ThirdPartParticulier";
 import { useNavigate } from "react-router-dom";
 
-export default function EntreprisePage() {
+export default function ParticulierPage() {
   const navigate = useNavigate();
 
   const handleClick = (path) => {
     navigate(path);
   };
   return (
-    <EntreprisePageStyled>
+    <ParticulierPageStyled>
       <SectionNavBar />
       <h1>SERVICES</h1>
       <div className="content">
-        <FirstPart />
-        <SecondPart />
-        <ThirdPart />
+        <FirstPartParticulier />
+        <SecondPartParticulier />
+        <ThirdPartParticulier />
       </div>
       <div className="footer">
         <ServicesFooter />
@@ -33,17 +33,17 @@ export default function EntreprisePage() {
           <p>Influenceur</p>
         </div>
         <div
-          className="particulier"
-          onClick={() => handleClick("../services/particulier")}
+          className="entreprise"
+          onClick={() => handleClick("../services/entreprise")}
         >
-          <p>Particulier</p>
+          <p>Entreprise</p>
         </div>
       </div>
-    </EntreprisePageStyled>
+    </ParticulierPageStyled>
   );
 }
 
-const EntreprisePageStyled = styled.div`
+const ParticulierPageStyled = styled.div`
   height: 100vh;
   width: 100%;
   color: white;
@@ -106,11 +106,12 @@ const EntreprisePageStyled = styled.div`
       align-items: center;
       cursor: pointer;
     }
-    .particulier {
+    .entreprise {
       width: 36%;
       height: 100%;
-      background: transparent linear-gradient(226deg, #d6c428 0%, #8021a8 90%)
-        0% 0% no-repeat padding-box;
+      background: transparent
+        linear-gradient(45deg, #0f0f6b 0%, #28bec3 87%, #28c0c5 100%) 0% 0%
+        no-repeat padding-box;
       box-shadow: inset 0px 10px 6px #58585829, 0px 10px 6px #00000029;
       border-radius: 10px;
       display: flex;

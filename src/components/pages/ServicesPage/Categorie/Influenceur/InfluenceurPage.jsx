@@ -3,33 +3,47 @@ import styled from "styled-components";
 import SectionNavBar from "../../../../reusable-ui/SectionNavBar";
 import ServicesFooter from "../../../../reusable-ui/ServicesFooter";
 import FirstPartInfluenceur from "./FirstPartInfluenceur";
+import SecondPartInfluenceur from "./SecondPartInfluenceur";
+import ThirdPartInfluenceur from "./ThirdPartInfluenceur";
+import { useNavigate } from "react-router-dom";
 
-export default function EntreprisePage() {
+export default function InfluenceurPage() {
+  const navigate = useNavigate();
+
+  const handleClick = (path) => {
+    navigate(path);
+  };
   return (
-    <EntreprisePageStyled>
+    <InfluenceurPageStyled>
       <SectionNavBar />
       <h1>SERVICES</h1>
       <div className="content">
         <FirstPartInfluenceur />
-        <SecondPart />
-        <ThirdPart />
+        <SecondPartInfluenceur />
+        <ThirdPartInfluenceur />
       </div>
       <div className="footer">
         <ServicesFooter />
       </div>
       <div className="nav">
-        <div className="influenceur">
-          <p>Influenceur</p>
+        <div
+          className="entreprise"
+          onClick={() => handleClick("../services/entreprise")}
+        >
+          <p>Entreprise</p>
         </div>
-        <div className="particulier">
+        <div
+          className="particulier"
+          onClick={() => handleClick("../services/particulier")}
+        >
           <p>Particulier</p>
         </div>
       </div>
-    </EntreprisePageStyled>
+    </InfluenceurPageStyled>
   );
 }
 
-const EntreprisePageStyled = styled.div`
+const InfluenceurPageStyled = styled.div`
   height: 100vh;
   width: 100%;
   color: white;
@@ -73,14 +87,14 @@ const EntreprisePageStyled = styled.div`
       text-align: left;
       font: normal normal bold 14px/17px Century Gothic;
     }
-    .influenceur {
+    .entreprise {
       width: 36%;
       height: 100%;
       background: transparent
         linear-gradient(
-          225deg,
-          #5c0f6b 0%,
-          #9346b4d6 15%,
+          40deg,
+          #0f0f6b 0%,
+          #0f0f6b 16%,
           #2dd8de 87%,
           #11f7ff 100%
         )
@@ -90,18 +104,19 @@ const EntreprisePageStyled = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
     .particulier {
       width: 36%;
       height: 100%;
-      background: transparent
-        linear-gradient(226deg, #d6c428 0%, #8021a8 90%, #28c0c5 100%) 0% 0%
-        no-repeat padding-box;
+      background: transparent linear-gradient(226deg, #d6c428 0%, #8021a8 90%)
+        0% 0% no-repeat padding-box;
       box-shadow: inset 0px 10px 6px #58585829, 0px 10px 6px #00000029;
       border-radius: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
   }
 `;

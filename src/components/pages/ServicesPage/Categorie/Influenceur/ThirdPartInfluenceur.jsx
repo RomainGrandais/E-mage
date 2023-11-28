@@ -1,13 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import TransparentSquare from "../../../../reusable-ui/TransparentSquare";
-
-export default function ThirdPart() {
+export default function ThirdPartInfluenceur() {
   return (
-    <ThirdPartStyled>
+    <ThirdPartInfluenceurStyled>
       <div className="main">
         <h1>PREMIUM</h1>
-
         <p>
           - Design haut de gamme et créatif <br /> - Création de matériel visuel
           avancé <br />- Illustrations personnalisées <br />- Révisions
@@ -31,11 +29,11 @@ export default function ThirdPart() {
         top={"55%"}
         left={"80%"}
       />
-    </ThirdPartStyled>
+    </ThirdPartInfluenceurStyled>
   );
 }
 
-const ThirdPartStyled = styled.div`
+const ThirdPartInfluenceurStyled = styled.div`
   width: 32%;
   height: 31vh;
   position: absolute;
@@ -45,9 +43,8 @@ const ThirdPartStyled = styled.div`
     position: relative;
     width: 100%;
     height: 100%;
-    background: transparent
-      linear-gradient(66deg, #0f0f6b 0%, #28bec3 87%, #28c0c5 100%) 0% 0%
-      no-repeat padding-box;
+    background: transparent linear-gradient(66deg, #590f6b 0%, #00f7ff 90%) 0%
+      0% no-repeat padding-box;
     box-shadow: inset 0px 10px 6px #58585829, 0px 10px 6px #00000029;
     border-radius: 10px;
     display: flex;
