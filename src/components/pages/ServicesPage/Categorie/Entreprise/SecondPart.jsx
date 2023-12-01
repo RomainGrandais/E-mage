@@ -2,11 +2,18 @@ import React from "react";
 import styled from "styled-components";
 import TransparentSquare from "../../../../reusable-ui/TransparentSquare";
 import ChooseButton from "../../../../reusable-ui/ChooseButton";
+import { useNavigate } from "react-router-dom";
 
 export default function SecondPart() {
+  const navigate = useNavigate();
+
+  const handleClick = (path) => {
+    navigate(path);
+  };
+
   return (
     <SecondPartStyled>
-      <div className="main">
+      <div className="main" onClick={() => handleClick("./standard")}>
         <h1>STANDARD</h1>
         <h5>
           2 Visuels par semaine <br />
@@ -63,6 +70,7 @@ const SecondPartStyled = styled.div`
     gap: 7%;
     color: #292929;
     z-index: 2;
+    cursor: pointer;
     h1 {
       font-size: 4.9vw;
       color: #2b2b2b;

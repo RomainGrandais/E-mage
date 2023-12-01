@@ -37,7 +37,7 @@ const NavBarEntrepriseStyled = styled.div`
     p {
       transform: matrix(0.74, -0.67, 0.67, 0.74, 0, 0);
       text-align: left;
-      font: normal normal bold 14px/17px Century Gothic;
+      font: normal normal bold 0.97vw Century Gothic;
     }
     .influenceur {
       width: 36%;

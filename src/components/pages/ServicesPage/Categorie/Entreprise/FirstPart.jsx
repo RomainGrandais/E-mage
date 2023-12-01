@@ -3,12 +3,18 @@ import styled from "styled-components";
 import TransparentSquare from "../../../../reusable-ui/TransparentSquare";
 import ChooseButton from "../../../../reusable-ui/ChooseButton";
 import TitleEntreprise from "./TitleEntreprise";
+import { useNavigate } from "react-router-dom";
 
 export default function FirstPart() {
+  const navigate = useNavigate();
+
+  const handleClick = (path) => {
+    navigate(path);
+  };
   return (
     <FirstPartStyled>
-      <TitleEntreprise />
-      <div className="main">
+      <TitleEntreprise width={"50%"} height={"35%"} />
+      <div className="main" onClick={() => handleClick("./basic")}>
         <h1>BASIC</h1>
         <h5>
           1 Visuel par semaine

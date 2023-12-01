@@ -7,6 +7,8 @@ import ServicesPage from "./components/pages/ServicesPage/ServicesPage";
 import EntreprisePage from "./components/pages/ServicesPage/Categorie/Entreprise/EntreprisePage";
 import InfluenceurPage from "./components/pages/ServicesPage/Categorie/Influenceur/InfluenceurPage";
 import ParticulierPage from "./components/pages/ServicesPage/Categorie/Particulier/ParticulierPage";
+import EntrepriseBasicPage from "./components/pages/ServicesPage/Categorie/Entreprise/Basic/EntrepriseBasicPage";
+import EntrepriseStandardPage from "./components/pages/ServicesPage/Categorie/Entreprise/Standard/EntreprisetandardPage";
 
 function App() {
   return (
@@ -18,6 +20,14 @@ function App() {
         <Route path="/portefolio/conceptArt" element={<ConceptArtPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/services/entreprise" element={<EntreprisePage />} />
+        <Route
+          path="/services/entreprise/basic"
+          element={<EntrepriseBasicPage />}
+        />
+        <Route
+          path="/services/entreprise/standard"
+          element={<EntrepriseStandardPage />}
+        />
         <Route path="/services/influenceur" element={<InfluenceurPage />} />
         <Route path="/services/particulier" element={<ParticulierPage />} />
       </Routes>

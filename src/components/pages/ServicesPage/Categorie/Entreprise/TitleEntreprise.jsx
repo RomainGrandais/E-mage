@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { IoBusinessOutline } from "react-icons/io5";
 
-export default function TitleEntreprise() {
+export default function TitleEntreprise({ width, height }) {
   return (
-    <TitleEntrepriseStyled>
+    <TitleEntrepriseStyled width={width} height={height}>
       <p>ENTREPRISE</p>
       <div className="icon">
         <IoBusinessOutline />
@@ -15,8 +15,8 @@ export default function TitleEntreprise() {
 
 const TitleEntrepriseStyled = styled.div`
   position: relative;
-  width: 50%;
-  height: 35%;
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
   transform: perspective(150px) rotateY(10deg);
   background: linear-gradient(63deg, #0f0f6b 0%, #28bec3 87%, #28c0c5 100%);
   box-shadow: inset 0px 10px 6px #58585829, 0px 10px 6px #00000029;

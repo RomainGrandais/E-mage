@@ -21,7 +21,7 @@ const ServicesFooterStyled = styled.div`
   border-bottom: 1px solid #e0d1a1;
   padding: 5px;
   p {
-    font: normal normal normal 15px Century Gothic;
+    font: normal normal normal 1.04vw Century Gothic;
     letter-spacing: 0px;
   }
 `;
