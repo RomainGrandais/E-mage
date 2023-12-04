@@ -16,7 +16,10 @@ export default function PortefolioPage() {
       <div className="content">
         <h1>PORTEFOLIO</h1>
         <div className="project">
-          <PortefolioProject label={"GAME DESIGN"} />
+          <PortefolioProject
+            label={"GAME DESIGN"}
+            onClick={() => handleClick("/portefolio/game-design")}
+          />
           <PortefolioProject label={"UX / UI DESIGN"} />
           <PortefolioProject label={"PRINT"} />
           <PortefolioProject
