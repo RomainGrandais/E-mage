@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { BsCart4 } from "react-icons/bs";
 
-export default function ChooseButton({ right, top, left }) {
+export default function ChooseButton({ right, top, left, onClick }) {
   return (
-    <ChooseButtonStyled right={right} top={top} left={left}>
+    <ChooseButtonStyled right={right} top={top} left={left} onClick={onClick}>
       <div className="content">
         {right ? (
           <>

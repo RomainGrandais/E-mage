@@ -30,7 +30,12 @@ export default function FirstPart() {
           <br /> <span>Prix mensuel : 249€ TTC</span>
         </p>
       </div>
-      <ChooseButton right={true} top={"-80%"} left={"83%"} />
+      <ChooseButton
+        right={true}
+        top={"-80%"}
+        left={"83%"}
+        onClick={() => handleClick("../services/buy")}
+      />
       <TransparentSquare
         width={"10%"}
         height={"12%"}
