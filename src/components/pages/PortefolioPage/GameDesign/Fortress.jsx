@@ -109,7 +109,7 @@ const FortressStyled = styled.div`
     z-index: 2;
     p {
       width: 90%;
-      text-align: left;
+      text-align: justify;
       font: normal normal normal 12px Century Gothic;
       letter-spacing: 0px;
       color: #e0d1a1;

@@ -132,7 +132,7 @@ const EntrepriseStandardPageStyled = styled.div`
     p {
       width: 80%;
       font: normal normal normal 0.69vw Century Gothic;
-      text-align: left;
+      text-align: justify;
     }
   }
   .footer {

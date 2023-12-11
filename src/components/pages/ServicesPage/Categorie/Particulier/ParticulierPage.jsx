@@ -84,7 +84,7 @@ const ParticulierPageStyled = styled.div`
     left: 5%;
     p {
       transform: matrix(0.74, -0.67, 0.67, 0.74, 0, 0);
-      text-align: left;
+      text-align: justify;
       font: normal normal bold 14px/17px Century Gothic;
     }
     .influenceur {

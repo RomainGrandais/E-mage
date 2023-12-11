@@ -5,6 +5,8 @@ import fortress from "../../../../../public/illustration site internet/portefoli
 import Charactere from "./Charactere";
 import Fortress from "./Fortress";
 import Description from "./Description";
+import Logo from "./Logo";
+import UxUi from "./UXUI";
 
 export default function GameDesignPage() {
   return (
@@ -17,6 +19,8 @@ export default function GameDesignPage() {
       </div>
       <Fortress />
       <Description />
+      <Logo />
+      <UxUi />
     </GameDesignPageStyled>
   );
 }

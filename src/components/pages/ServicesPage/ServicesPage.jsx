@@ -46,11 +46,11 @@ const ServicesPageStyled = styled.div`
     h1 {
       font-size: 70px;
       font-weight: 300;
-      text-align: left;
+      text-align: justify;
       padding-bottom: 70px;
     }
     h2 {
-      text-align: left;
+      text-align: justify;
       font: normal normal normal 30px Century Gothic;
       letter-spacing: 0px;
       color: #ffffff;

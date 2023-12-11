@@ -154,7 +154,7 @@ const CharactereStyled = styled.div`
   }
   h2 {
     width: 90%;
-    text-align: left;
+    text-align: justify;
     font: normal normal normal 75px Bebas Neue;
     letter-spacing: 0px;
     color: #ffffff;
@@ -168,7 +168,7 @@ const CharactereStyled = styled.div`
     gap: 7%;
     p {
       width: 90%;
-      text-align: left;
+      text-align: justify;
       font: normal normal normal 10px Century Gothic;
       letter-spacing: 0px;
     }

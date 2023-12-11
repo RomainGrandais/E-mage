@@ -62,7 +62,7 @@ const ThirdPartStyled = styled.div`
     }
     p {
       font: normal normal normal 0.8vw "Century Gothic";
-      text-align: left;
+      text-align: justify;
       width: 80%;
     }
     span {

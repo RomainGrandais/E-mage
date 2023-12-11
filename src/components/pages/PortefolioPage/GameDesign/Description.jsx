@@ -73,7 +73,7 @@ const DescriptionStyled = styled.div`
       p {
         width: 85%;
         height: 70%;
-        text-align: left;
+        text-align: justify;
         font: normal normal normal 12px Century Gothic;
         letter-spacing: 0px;
         color: #ffffff;

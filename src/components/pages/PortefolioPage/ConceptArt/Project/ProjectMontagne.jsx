@@ -70,7 +70,7 @@ const ProjectMontagneStyled = styled.div`
     width: 25%;
     height: 60%;
     p {
-      text-align: left;
+      text-align: justify;
       font: normal normal normal 12px/15px Century Gothic;
       letter-spacing: 0px;
       color: #ffffff;

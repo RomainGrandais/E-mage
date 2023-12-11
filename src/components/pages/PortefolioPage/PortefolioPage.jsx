@@ -44,7 +44,7 @@ const PortefolioPageStyled = styled.div`
     flex-direction: column;
     h1 {
       font-size: 70px;
-      text-align: left;
+      text-align: justify;
     }
     .project {
       border-top: 1px solid white;
