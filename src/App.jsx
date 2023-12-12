@@ -10,6 +10,7 @@ import ParticulierPage from "./components/pages/ServicesPage/Categorie/Particuli
 import EntrepriseBasicPage from "./components/pages/ServicesPage/Categorie/Entreprise/Basic/EntrepriseBasicPage";
 import EntrepriseStandardPage from "./components/pages/ServicesPage/Categorie/Entreprise/Standard/EntreprisetandardPage";
 import GameDesignPage from "./components/pages/PortefolioPage/GameDesign/GameDesignPage";
+import GalleryPage from "./components/pages/PortefolioPage/GalleryPage/GalleryPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/portefolio" element={<PortefolioPage />} />
         <Route path="/portefolio/conceptArt" element={<ConceptArtPage />} />
         <Route path="/portefolio/game-design" element={<GameDesignPage />} />
+        <Route path="/portefolio/gallery" element={<GalleryPage />} />
 
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/services/entreprise" element={<EntreprisePage />} />

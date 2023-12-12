@@ -4,6 +4,8 @@ import circle from "../../../../../public/illustration site internet/portefolio/
 import shield from "../../../../../public/illustration site internet/portefolio/LengendOfFortress/logo guerrier 3.png";
 import piece from "../../../../../public/illustration site internet/portefolio/LengendOfFortress/pièce de cuivre.png";
 import diamond from "../../../../../public/illustration site internet/portefolio/LengendOfFortress/Gemmes.png";
+import arrowBig from "../../../../../public/illustration site internet/portefolio/LengendOfFortress/ArrowBig.png";
+import arrow from "../../../../../public/illustration site internet/portefolio/LengendOfFortress/Arrow.png";
 
 export default function UxUi() {
   return (
@@ -13,7 +15,10 @@ export default function UxUi() {
         <div className="first">
           <img src={circle} alt="" />
         </div>
-        <div className="second"></div>
+        <div className="second">
+          <img src={arrow} alt="" />
+          <img src={arrowBig} alt="" />
+        </div>
         <div className="third">
           <div className="layer1">
             <img src={shield} alt="" />
@@ -45,6 +50,7 @@ const UxUiStyled = styled.div`
     height: 90%;
     display: flex;
     flex-direction: row;
+    gap: 5%;
     .first {
       width: 33%;
       height: 100%;
@@ -60,10 +66,7 @@ const UxUiStyled = styled.div`
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      img {
-        width: 100%;
-        height: 100%;
-      }
+      gap: 20%;
     }
     .third {
       width: 33%;

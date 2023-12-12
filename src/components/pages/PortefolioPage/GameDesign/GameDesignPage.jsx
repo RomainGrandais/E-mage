@@ -7,6 +7,8 @@ import Fortress from "./Fortress";
 import Description from "./Description";
 import Logo from "./Logo";
 import UxUi from "./UXUI";
+import Palette from "./Palette";
+import Building from "./Building";
 
 export default function GameDesignPage() {
   return (
@@ -21,20 +23,22 @@ export default function GameDesignPage() {
       <Description />
       <Logo />
       <UxUi />
+      <Palette />
+      <Building />
     </GameDesignPageStyled>
   );
 }
 
 const GameDesignPageStyled = styled.div`
   width: 100%;
-  height: 665vh;
+  height: 775vh;
   overflow: hidden;
   color: #ffffff;
 
   &::before {
     content: "";
     position: absolute;
-    height: 665vh;
+    height: 775vh;
     top: 0;
     left: 0;
     right: 0;

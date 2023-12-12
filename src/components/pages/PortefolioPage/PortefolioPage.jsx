@@ -26,7 +26,10 @@ export default function PortefolioPage() {
             label={"CONCEPT ART"}
             onClick={() => handleClick("/portefolio/conceptArt")}
           />
-          <PortefolioProject label={"GALLERY"} />
+          <PortefolioProject
+            label={"GALLERY"}
+            onClick={() => handleClick("/portefolio/gallery")}
+          />
         </div>
       </div>
     </PortefolioPageStyled>
