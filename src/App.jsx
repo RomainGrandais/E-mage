@@ -11,6 +11,7 @@ import EntrepriseBasicPage from "./components/pages/ServicesPage/Categorie/Entre
 import EntrepriseStandardPage from "./components/pages/ServicesPage/Categorie/Entreprise/Standard/EntreprisetandardPage";
 import GameDesignPage from "./components/pages/PortefolioPage/GameDesign/GameDesignPage";
 import GalleryPage from "./components/pages/PortefolioPage/GalleryPage/GalleryPage";
+import UiUxPage from "./components/pages/PortefolioPage/UiUx/UiUxPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/portefolio/conceptArt" element={<ConceptArtPage />} />
         <Route path="/portefolio/game-design" element={<GameDesignPage />} />
         <Route path="/portefolio/gallery" element={<GalleryPage />} />
+        <Route path="/portefolio/UiUx" element={<UiUxPage />} />
 
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/services/entreprise" element={<EntreprisePage />} />

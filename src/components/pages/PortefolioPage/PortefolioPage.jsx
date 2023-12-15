@@ -20,7 +20,10 @@ export default function PortefolioPage() {
             label={"GAME DESIGN"}
             onClick={() => handleClick("/portefolio/game-design")}
           />
-          <PortefolioProject label={"UX / UI DESIGN"} />
+          <PortefolioProject
+            label={"UX / UI DESIGN"}
+            onClick={() => handleClick("/portefolio/UiUx")}
+          />
           <PortefolioProject label={"PRINT"} />
           <PortefolioProject
             label={"CONCEPT ART"}
