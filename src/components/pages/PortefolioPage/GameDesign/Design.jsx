@@ -7,9 +7,9 @@ import diamond from "../../../../../public/illustration site internet/portefolio
 import arrowBig from "../../../../../public/illustration site internet/portefolio/LengendOfFortress/ArrowBig.png";
 import arrow from "../../../../../public/illustration site internet/portefolio/LengendOfFortress/Arrow.png";
 
-export default function UxUi() {
+export default function Design() {
   return (
-    <UxUiStyled>
+    <DesignStyled>
       <h2>UX-UI</h2>
       <div className="content">
         <div className="first">
@@ -29,10 +29,10 @@ export default function UxUi() {
           </div>
         </div>
       </div>
-    </UxUiStyled>
+    </DesignStyled>
   );
 }
-const UxUiStyled = styled.div`
+const DesignStyled = styled.div`
   width: 100%;
   height: 40vh;
   margin-top: 3%;

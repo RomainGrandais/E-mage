@@ -6,10 +6,10 @@ import Charactere from "./Charactere";
 import Fortress from "./Fortress";
 import Description from "./Description";
 import Logo from "./Logo";
-import UxUi from "./UXUI";
 import Palette from "./Palette";
 import Building from "./Building";
 import Guerrier from "../../../../../public/illustration site internet/portefolio/LengendOfFortress/GUERRIER_BAN.png";
+import Design from "./Design";
 
 export default function GameDesignPage() {
   return (
@@ -23,7 +23,7 @@ export default function GameDesignPage() {
       <Fortress />
       <Description />
       <Logo />
-      <UxUi />
+      <Design />
       <Palette />
       <Building />
       <div className="soldat">
