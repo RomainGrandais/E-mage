@@ -24,19 +24,21 @@ export default function ContactBio() {
 }
 
 const ContactBioStyled = styled.div`
-  height: 25%;
-
-  width: 50%;
+  width: 38%;
   height: 100%;
-  border-radius: 46px;
-  box-shadow: inset 0px 2px 3px #ffffff73, 14px 12px 10px #0000006b;
+  background: transparent
+    linear-gradient(76deg, rgba(1, 18, 21, 0.71) 0%, rgba(4, 58, 72, 0.71) 100%)
+    0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 10px 6px #58585829, 0px 10px 6px #00000029;
+  border-radius: 36px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   p {
-    width: 80%;
+    width: 90%;
     color: white;
     font-family: "Century Gothic";
-    font-size: 12px;
+    font-size: 10px;
   }
 `;

@@ -18,9 +18,13 @@ export default function ContactForm() {
 
 const ContactFormStyled = styled.div`
   width: 50%;
-  height: 40%;
-  box-shadow: 14px 12px 12px 10px #0000006b;
-  border-radius: 46px;
+  height: 35%;
+  background: transparent
+    linear-gradient(71deg, rgba(1, 18, 21, 0.71) 0%, rgba(4, 58, 72, 0.71) 100%)
+    0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 10px 6px #58585829, 0px 10px 6px #00000029;
+  border-radius: 78px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
